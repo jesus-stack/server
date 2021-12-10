@@ -14,7 +14,7 @@ app.use(express.json())
 //rutas
 app.use('/productos',require('./routes/producto,routes'));
 
-
-app.listen(8080,()=>{
-    console.log('servidor iniciado correctamente');
+const PORT = process.env.PORT || 8080;
+app.listen(PORT,()=>{
+    console.log('servidor iniciado correctamente en puerto '+ PORT);
 })
