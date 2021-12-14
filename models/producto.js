@@ -3,9 +3,9 @@ const {Schema} = mongoose;
 
 const productmodel=new Schema({
     nombre: {type:String, required:true},
-    categoria: {type:String, required:true},
-    ubicacion: {type:String, required:true},
-    precio: {type:Number, required:true}
+    descripcion: {type:String, required:true},
+    estado: {type:Boolean, required:true,default: false},
+   
 });
 
 module.exports= mongoose.model('producto',productmodel);

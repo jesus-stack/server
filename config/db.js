@@ -4,7 +4,7 @@ require('dotenv').config({path: 'variables.env'})
 const conectDB = async () =>{
 
     try{
-        await mongoose.connect('DB_MONGO = mongodb+srv://jisus:123@cluster0.c0xwy.mongodb.net/meanproductos',{
+        await mongoose.connect('DB_MONGO = mongodb+srv://jisus:123@cluster0.c0xwy.mongodb.net/regaloskaty',{
             useNewUrlParser:true,
             useUnifiedTopology: true,
             
